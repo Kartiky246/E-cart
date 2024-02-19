@@ -76,9 +76,9 @@ const Header = () => {
                       />
                     </span>
                   ))}
-                  <Link to="/cart">
+                  <Link to="/checkout">
                     <Button style={{ width: "95%", margin: "0 10px" }}>
-                      Go To Cart
+                      Go To Checkout
                     </Button>
                   </Link>
                 </>
@@ -88,6 +88,9 @@ const Header = () => {
             </Dropdown.Menu>
           </Dropdown>
         </Nav>
+        <Navbar.Text>
+          <Link to="/contactUs">Contact Us</Link>
+        </Navbar.Text>
       </Container>
     </Navbar>
   );
