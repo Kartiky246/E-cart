@@ -1,8 +1,11 @@
 import { Button, Form } from "react-bootstrap";
 import { CartState } from "../context/Context";
 import Rating from "./Rating";
+import { useHistory } from 'react-router-dom';
+
 
 const Filters = () => {
+  const history = useHistory();
   const {
     productDispatch,
     productState: { byStock, byFastDelivery, sort, byRating },
@@ -97,6 +100,15 @@ const Filters = () => {
         }
       >
         Clear Filters
+      </Button>
+      <Button
+      style={{ marginTop:'30vh' }}
+        variant="light"
+        onClick={() =>
+          history.push('/contactUs')
+        }
+      >
+        Contact Us
       </Button>
     </div>
   );
