@@ -61,6 +61,8 @@ const ContactUs = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
    setFormData({name:'',email:'',message:''})
+   window.VWO = window.VWO || [];
+   window.VWO.push(['track.goalConversion',9]);
   };
 
   return (
