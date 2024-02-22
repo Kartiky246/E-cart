@@ -4,6 +4,7 @@ import { BrowserRouter, Route } from "react-router-dom";
 import Home from "./components/Home";
 import Cart from "./components/Cart";
 import ContactUs from "./components/ContactUs";
+import AboutPage from "./components/About";
 
 function App() {
   return (
@@ -18,6 +19,9 @@ function App() {
         </Route>
         <Route path="/contactUs">
           <ContactUs/>
+        </Route>
+        <Route path="/about">
+          <AboutPage/>
         </Route>
       </div>
     </BrowserRouter>
