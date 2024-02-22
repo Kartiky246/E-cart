@@ -91,6 +91,9 @@ const Header = () => {
         <Navbar.Text>
           <Link to="/contactUs">Contact Us</Link>
         </Navbar.Text>
+        <Navbar.Text>
+          <Link to="/about">About</Link>
+        </Navbar.Text>
       </Container>
     </Navbar>
   );
